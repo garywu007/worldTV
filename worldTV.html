@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<head>
+  <title>World TV</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="https://png.pngtree.com/element_origin_min_pic/16/09/19/2157dfe9cadda13.jpg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  .navList {
+    width: 3em;
+  }
+  .navList ul .nav-item .nav-link {
+    color: white;
+  }
+  .navList ul .nav-item .active {
+    border-radius: 0px;
+    background-color: DarkOrange;
+    color: white;
+  }
+  .row {
+    padding: 0em 0em;
+    background-color: DimGrey;
+  }
+  .channels {
+    margin: 0em 0em 0em 6em;
+    width: 100%;
+  }
+  .channels div .section-headers {
+    background-color: DarkOrange;
+    color: white;
+    height: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .channelCard {
+    padding: 2px;
+  }
+  .card .imgDiv {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    overflow-y: hidden;
+  }
+  .card .imgDiv img {
+    height: 100%;
+  }
+  .card-footer {
+    padding: 0px;
+    text-align: center;
+  }
+</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navList" id="myScrollspy">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#section1">香港</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">台湾</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">国外</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">CCTV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section5">广东</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section6">卫视</a>
+        </li>
+        
+      </ul>
+    </nav>
+    <div class="channels">
+      <div id="section1" class="section">    
+        <div class="section1-header section-headers">香港</div>
+        <div class="container">
+          <div class="row">
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=bad620f7928bf452900f302f7be41b1d&tid=gt&id=1');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.tvyan.com/uploads/dianshi/jade.jpg" class="card-img-top" alt="翡翠台"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">翡翠台</small>
+                  </div>
+                </div>
+            </div>
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=f366e9d72e90fc03f15fac15b1f77462&tid=gt&id=9');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.tvyan.com/uploads/dianshi/tvb-news.jpg" class="card-img-top" alt="無線新聞台"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">無線新聞台</small>
+                  </div>
+                </div>
+            </div>
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=403f237ead25577f7a6b6849f6b92464&tid=gt&id=10');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.tvyan.com/uploads/dianshi/tvb-finance.jpg" class="card-img-top" alt="財經資訊台"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">財經資訊台</small>
+                  </div>
+                </div>
+            </div>
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=a707f69f8e213f59bc9372b9e1fc7850&tid=gt&id=13');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.tvyan.com/uploads/dianshi/pearl.jpg" class="card-img-top" alt="明珠台"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">明珠台</small>
+                  </div>
+                </div>
+            </div>
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=dc9cf8b3879ed33e4a0441279ba2adb8&tid=gt&id=2');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.tvyan.com/uploads/dianshi/fhzwt.jpg" class="card-img-top" alt="鳳凰中文"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">鳳凰中文</small>
+                  </div>
+                </div>
+            </div>
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=fe5d2c78180b341fa467b366c91992cd&tid=gt&id=3');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.tvyan.com/uploads/dianshi/fhzxt.jpg" class="card-img-top" alt="鳳凰資訊"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">鳳凰資訊</small>
+                  </div>
+                </div>
+            </div>
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=24537b62d715f39f948ff7faad4d076e&tid=gt&id=14');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Now_TV_logo.svg/1200px-Now_TV_logo.svg.png" class="card-img-top" alt="now TV"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">now TV</small>
+                  </div>
+                </div>
+            </div>
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=054a515ec1cc425b97e4dc342dd88dc6&tid=gt&id=20');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.tvyan.com/uploads/dianshi/rhk31.jpg" class="card-img-top" alt="港台電視31"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">港台電視31</small>
+                  </div>
+                </div>
+            </div>
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=79f43202ba4263b10083293355804a46&tid=gt&id=19');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://www.bschannel.com/resources/website/zh/images/header-logo.png" class="card-img-top" alt="耀才財經"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">耀才財經</small>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div id="section2" class="section">    
+        <div class="section2-header section-headers">台湾</div>
+        <div class="container">
+          <div class="row">
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=c9d6bde7d0a8c3beb8bbf35ae68f3712&tid=gt&id=46');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://tv107.com/cover/tvbs.jpg" class="card-img-top" alt="TVBS新聞台"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">TVBS新聞台</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=825f68d56c27200fbabc2a5227c7afd0&tid=gt&id=47');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://img.news.ebc.net.tw/images/2018/06/14/15289633216961wsOtRYXWAc.png" class="card-img-top" alt="東森新聞台"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">東森新聞台</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=d22f65858add65b2e033bfdba3f6ba15&tid=gt&id=51');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://img.vpnclub.cc/content/zh/2018/09/FTV-News-Logo.jpg" class="card-img-top" alt="民視新聞台"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">民視新聞台</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=4e2fddc5a045b7d06cbb9115358ff65d&tid=gt&id=68');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://yaagu.co/wp-content/uploads/2017/02/TVBS_4K_LOGO.jpg" class="card-img-top" alt="TVBS HD"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">TVBS HD</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=fcc86c230646ad4ae6e5237fca78ab0f&tid=gt&id=84');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://tv.itver.cc/wp-content/uploads/2014/05/FTV-HD-Logo.jpg" class="card-img-top" alt="民視HD"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">民視HD</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=4bbc90460cd20b8af517a2b2975c2615&tid=gt&id=90');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://upload.wikimedia.org/wikipedia/zh/thumb/4/43/TTV_Home_Channel_with_HD_2016.png/400px-TTV_Home_Channel_with_HD_2016.png" class="card-img-top" alt="台視HD"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">台視HD</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=a8062e32cc296610943b3dd70fd3cc50&tid=gt&id=93');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://upload.wikimedia.org/wikipedia/zh/2/22/CTV_text.png" class="card-img-top" alt="中視HD"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">中視HD</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=9901d2b8a3dc4c31505813769e890597&tid=gt&id=107');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.twt.com.tw/Upload_Img/images/classica.png" class="card-img-top" alt="古典音樂台"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">古典音樂台</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=0bed6dc582742d7e98d54ab4616821d4&tid=gt&id=137');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://twg.skyking.com.tw/skyking/Icon/E09333.png" class="card-img-top" alt="國際電影台"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">國際電影台</small>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div id="section3" class="section">    
+        <div class="section3-header section-headers">国外</div>
+        <div class="container">
+          <div class="row">
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=24995626374342e471ea695afeadd885&tid=gt&id=27');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.contentchina.net/uploadfile/2016/0808/20160808035216724.jpg" class="card-img-top" alt="HBO"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">HBO</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=9753b206017d71375c4417f6132d6aee&tid=gt&id=28');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://www.hbo.ro/siteimages/uploadedfiles/Romania/HBO2.JPG" class="card-img-top" alt="HBO2"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">HBO2</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=ce7d2ba61cbc0d617bef346ab7d1ccdf&tid=gt&id=182');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/BBC_News.svg/1280px-BBC_News.svg.png" class="card-img-top" alt="BBC 新聞"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">BBC 新聞</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=1c5975d2325afbc6d2b764145630b238&tid=gt&id=187');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://tv.itver.cc/wp-content/uploads/2014/10/CNN-International-670x300.jpg" class="card-img-top" alt="CNN國際新聞"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">CNN國際新聞</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=46b6701895573b2494070dfeebce2511&tid=gt&id=188');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://upload.wikimedia.org/wikipedia/zh/thumb/a/a6/CNN_International_logo.png/400px-CNN_International_logo.png" class="card-img-top" alt="CNN頭條新聞"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">CNN頭條新聞</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=b5a6cd4f943069e5cd8f9f8822a7b2d1&tid=gt&id=192');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/DMAX_Logo_16_05_2011.jpg" class="card-img-top" alt="Discovery DMAX HD"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">Discovery DMAX HD</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=e43b1978feb07314496db7944e193906&tid=gt&id=194');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DSC/DSC_425x243.png" class="card-img-top" alt="Discovery 科學HD"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">Discovery 科學HD</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=78e01db0574cfe57f82c874cdcab2840&tid=gt&id=30');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://tv.itver.cc/wp-content/uploads/2014/05/National-Geographic-Logo.jpg" class="card-img-top" alt="國家地理"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">國家地理</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=0c07ce4920b710750967db9f816cfc3c&tid=gt&id=224');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://m.4standup.com/files/channel-news-asia-logo.jpg" class="card-img-top" alt="CNA亞洲新聞"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">CNA亞洲新聞</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=5da0e9f83841f051057af3317081e503&tid=gt&id=223');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Deutsche_Welle_Logo.svg/500px-Deutsche_Welle_Logo.svg.png" class="card-img-top" alt="德國之聲"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">德國之聲</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=3229e24192a2010d933b776c99137b21&tid=gt&id=220');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Travel_Channel_HD_-_Logo.png" class="card-img-top" alt="Travel Channel"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">Travel Channel</small>
+                  </div>
+                </div>
+            </div>
+			<div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('http://iptv186.com/?act=play&token=53a9885cf74517a422f267959e800a2c&tid=gt&id=205');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="https://upload.wikimedia.org/wikipedia/en/6/6d/The_History_Channel_logo.png" class="card-img-top" alt="History"></div>
+                  <div class="card-footer">
+                    <small class="text-muted">History</small>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div id="section4" class="section">    
+        <div class="section4-header section-headers">CCTV</div>
+        <div class="container">
+          <div class="row">
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="" class="card-img-top" alt=""></div>
+                  <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div id="section5" class="section">    
+        <div class="section5-header section-headers">广东</div>
+        <div class="container">
+          <div class="row">
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="" class="card-img-top" alt=""></div>
+                  <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div id="section6" class="section">    
+        <div class="section6-header section-headers">卫视</div>
+        <div class="container">
+          <div class="row">
+            <div class="channelCard col-4 col-sm-4 col-md-3 col-lg-2 col-xl-1" onclick="gotoChannel('');">
+                <div class="card border-warning">
+                  <div class="imgDiv"><img src="" class="card-img-top" alt=""></div>
+                  <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script>
+function gotoChannel(url) {
+	location.href = url;
+}
+</script>
+</html>
